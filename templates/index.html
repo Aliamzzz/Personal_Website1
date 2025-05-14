@@ -69,16 +69,17 @@
                     <div class="col-left">
                         <span class="sub-heading">سلام 
                         </span>
-                        <h1 class="heading">نت
-                            <span>کپی</span>
+                        <h1 class="heading">
+                            <span>علی</span>
+                            هستم
                         </h1>
                         <h4 class="heading2">فول استک 
                         </h4>
                         <p class="paragraph">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+                        دانشجوی کامپیوتر هستم و حال حاضر در حال مرگم
                         <div class="btn-blk">
-                            <a href="#contact" class="btn btn-blue">بیایید صحبت کنیم</a>
-                            <a href="#portfolio" class="btn btn-black">مشاهده پروژه ها</a>
+                            <a href="#contact" class="btn btn-blue">دکمه خودکشی</a>
+                            <a href="#portfolio" class="btn btn-black">دکمه ادامه تحصیل</a>
                         </div>
                         <div class="social">
                             <ul>
@@ -173,101 +174,20 @@
                 <h2>مهارت های من </h2>
                 <div class="experience-inner d-grid">
                     <!-- item -->
-                    <div class="progressbar-item">
+                    {% for object in Talents %}
+                    	<div class="progressbar-item">
                         <div class="progressbar-content d-flex">
-                            <h3>Figma</h3>
-                            <h4>95%</h4>
+                            <h3>{{ object.name }}</h3>
+                            <h4>{{ object.mastery }}%</h4>
                         </div>
                         <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:95%">
+                            <div class="progressbar-size" style="width:{{ object.mastery }}%">
 
                             </div>
                         </div>
                     </div>
-                    <!-- item -->
-                    <div class="progressbar-item">
-                        <div class="progressbar-content d-flex">
-                            <h3>Adobe xd</h3>
-                            <h4>85%</h4>
-                        </div>
-                        <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:85%">
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <div class="progressbar-item">
-                        <div class="progressbar-content d-flex">
-                            <h3>Photoshop</h3>
-                            <h4>90%</h4>
-                        </div>
-                        <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:90%">
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <div class="progressbar-item">
-                        <div class="progressbar-content d-flex">
-                            <h3>illustrator</h3>
-                            <h4>80%</h4>
-                        </div>
-                        <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:80%">
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <div class="progressbar-item">
-                        <div class="progressbar-content d-flex">
-                            <h3>Html</h3>
-                            <h4>96%</h4>
-                        </div>
-                        <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:96%">
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <div class="progressbar-item">
-                        <div class="progressbar-content d-flex">
-                            <h3>Css</h3>
-                            <h4>96%</h4>
-                        </div>
-                        <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:96%">
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <div class="progressbar-item">
-                        <div class="progressbar-content d-flex">
-                            <h3>Javascript</h3>
-                            <h4>75%</h4>
-                        </div>
-                        <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:75%">
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item -->
-                    <div class="progressbar-item">
-                        <div class="progressbar-content d-flex">
-                            <h3>React Js</h3>
-                            <h4>70%</h4>
-                        </div>
-                        <div class="progessbar-bg">
-                            <div class="progressbar-size" style="width:70%">
-
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+                    
                 </div>
             </div>
         </section>
