@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16926688-072b-4d6e-abde-9751731999ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MyProjects/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProjects/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal_Website1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Personal_Website1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personal_Website1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Personal_Website1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProjects/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyProjects/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
@@ -111,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747143759906</updated>
-      <workItem from="1747143761296" duration="24471000" />
+      <workItem from="1747143761296" duration="26230000" />
     </task>
     <servers />
   </component>
