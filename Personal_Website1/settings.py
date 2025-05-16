@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Talents.apps.TalentsConfig',
     'Jobs.apps.JobsConfig',
+    'ContactMe',
+    'MyProjects',
 ]
 
 MIDDLEWARE = [

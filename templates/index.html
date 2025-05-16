@@ -230,84 +230,88 @@
         <div class="container">
             <h2>پروژههای اخیر</h2>
             <div class="projects-inner d-grid">
-                <!-- item -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="{% static 'images/projects/1.jpg' %}" alt="project image">
-                    </div>
-                    <div class="project-content">
-                        <h3>نام پروژه</h3>
-                        <div class="project-view d-flex">
-                            <span>تکنولوژی استفاده شده</span>
-                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>
+                {% for object in MyProjects %}
+                	 <!-- item -->
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="{{ object.image.url }}" alt="project image">
+                        </div>
+                        <div class="project-content">
+                            <h3>{{ object.name }}</h3>
+                            <div class="project-view d-flex">
+                                <span>{{ object.description }}</span>
+                                <a href="javascript:void(0)" class="btn-view">مشاهده </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- item -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="{% static 'images/projects/2.jpg' %}" alt="project image">
-                    </div>
-                    <div class="project-content">
-                        <h3>نام پروژه</h3>
-                        <div class="project-view d-flex">
-                            <span>تکنولوژی استفاده شده</span>
-                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="{% static 'images/projects/3.jpg' %}" alt="project image">
-                    </div>
-                    <div class="project-content">
-                        <h3>نام پروژه</h3>
-                        <div class="project-view d-flex">
-                            <span>تکنولوژی استفاده شده</span>
-                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="{% static 'images/projects/4.jpg' %}" alt="project image">
-                    </div>
-                    <div class="project-content">
-                        <h3>نام پروژه</h3>
-                        <div class="project-view d-flex">
-                            <span>تکنولوژی استفاده شده</span>
-                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="{% static 'images/projects/5.jpg' %}" alt="project image">
-                    </div>
-                    <div class="project-content">
-                        <h3>نام پروژه</h3>
-                        <div class="project-view d-flex">
-                            <span>تکنولوژی استفاده شده</span>
-                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- item -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="{% static 'images/projects/6.jpg' %}" alt="project image">
-                    </div>
-                    <div class="project-content">
-                        <h3>نام پروژه</h3>
-                        <div class="project-view d-flex">
-                            <span>تکنولوژی استفاده شده</span>
-                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
+                
+               
+{#                <!-- item -->#}
+{#                <div class="project-item">#}
+{#                    <div class="project-image">#}
+{#                        <img src="{% static 'images/projects/2.jpg' %}" alt="project image">#}
+{#                    </div>#}
+{#                    <div class="project-content">#}
+{#                        <h3>نام پروژه</h3>#}
+{#                        <div class="project-view d-flex">#}
+{#                            <span>تکنولوژی استفاده شده</span>#}
+{#                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- item -->#}
+{#                <div class="project-item">#}
+{#                    <div class="project-image">#}
+{#                        <img src="{% static 'images/projects/3.jpg' %}" alt="project image">#}
+{#                    </div>#}
+{#                    <div class="project-content">#}
+{#                        <h3>نام پروژه</h3>#}
+{#                        <div class="project-view d-flex">#}
+{#                            <span>تکنولوژی استفاده شده</span>#}
+{#                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- item -->#}
+{#                <div class="project-item">#}
+{#                    <div class="project-image">#}
+{#                        <img src="{% static 'images/projects/4.jpg' %}" alt="project image">#}
+{#                    </div>#}
+{#                    <div class="project-content">#}
+{#                        <h3>نام پروژه</h3>#}
+{#                        <div class="project-view d-flex">#}
+{#                            <span>تکنولوژی استفاده شده</span>#}
+{#                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- item -->#}
+{#                <div class="project-item">#}
+{#                    <div class="project-image">#}
+{#                        <img src="{% static 'images/projects/5.jpg' %}" alt="project image">#}
+{#                    </div>#}
+{#                    <div class="project-content">#}
+{#                        <h3>نام پروژه</h3>#}
+{#                        <div class="project-view d-flex">#}
+{#                            <span>تکنولوژی استفاده شده</span>#}
+{#                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- item -->#}
+{#                <div class="project-item">#}
+{#                    <div class="project-image">#}
+{#                        <img src="{% static 'images/projects/6.jpg' %}" alt="project image">#}
+{#                    </div>#}
+{#                    <div class="project-content">#}
+{#                        <h3>نام پروژه</h3>#}
+{#                        <div class="project-view d-flex">#}
+{#                            <span>تکنولوژی استفاده شده</span>#}
+{#                            <a href="javascript:void(0)" class="btn-view">مشاهده </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
             </div>
             <div class="view-more-block">
                 <a href="#" class="btn btn-outline">مشاهده بیشتر</a>
@@ -445,17 +449,24 @@
                 </ul>
             </div>
             <div class="footer-bottom d-flex">
-                <p class="copyright">فارسی و راست چین شده توسط <a href="https://netcopy.ir">نت کپی</a></p>
+                <!-- <p class="copyright">فارسی و راست چین شده توسط <a href="https://netcopy.ir">نت کپی</a></p> -->
                 <div class="footer-social">
-                    <a href="#" class="footer-social"><img
-                            src="{% static 'images/social-icons/feather_instagram.svg' %}"
-                            alt="instagram"></a>
-                    <a href="#" class="footer-social"><img src="{% static 'images/social-icons/feather_linkedin.svg' %}"
-                                                           alt="linkedin"></a>
-                    <a href="#" class="footer-social"><img src="{% static 'images/social-icons/feather_github.svg' %}"
-                                                           alt="github"></a>
-                    <a href="#" class="footer-social"><img src="{% static 'images/social-icons/feather_dribbble.svg' %}"
-                                                           alt=""></a>
+                    {% for object in ContactMe %}
+                    	<a href="{{ object.address }}" class="footer-social" target="_blank" rel="noopener">
+                        <img src="{{ object.logo.url }}"
+                                                           alt="{{ object.name }}"></a>
+                    {% endfor %}
+                    
+                    
+{#                    <a href="#" class="footer-social" target="_blank" rel="noopener">#}
+{#                        <img src="{% static 'images/social-icons/feather_linkedin.svg' %}"#}
+{#                                                           alt="linkedin"></a>#}
+{#                    <a href="#" class="footer-social" target="_blank" rel="noopener">#}
+{#                        <img src="{% static 'images/social-icons/feather_github.svg' %}"#}
+{#                                                           alt="github"></a>#}
+{#                    <a href="#" class="footer-social" target="_blank" rel="noopener">#}
+{#                        <img src="{% static 'images/social-icons/feather_dribbble.svg' %}"#}
+{#                                                           alt=""></a>#}
                 </div>
             </div>
         </div>
