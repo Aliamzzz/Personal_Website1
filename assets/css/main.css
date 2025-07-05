@@ -153,6 +153,7 @@ nav {
   width: 100%;
   padding: 25px 0;
 }
+
 .logo .logo-dark {
   display: none;
 }
@@ -750,6 +751,7 @@ label.error {
 .contact-inner .textarea textarea {
   height: 200px;
   padding: 20px 15px;
+  resize: none;
 }
 /* Footer */
 footer {
@@ -785,7 +787,7 @@ footer {
 .footer-social a {
   width: 37px;
   height: 37px;
-  background: var(--bg-dark);
+  background: rgb(120, 84, 247);
   text-align: center;
   padding: 9px 0;
   display: inline-block;
@@ -1126,6 +1128,13 @@ body.darkmode a.btn-default {
   }
   .footer-social {
     margin-top: 15px;
+  }
+  .social-icon {
+    margin-top: 15px;
+    width: 19px;
+    background: #0acf83;
+    /*height: 19px;*/
+    /*object-fit: cover;*/
   }
   .modal {
     width: 95%;
