@@ -1,10 +1,17 @@
 from django.shortcuts import render
-from ContactMe.models import Contact
+from ContactMe.models import Contact, Message
 from MyProjects.models import Project
 from Talents.models import Talent
 from Jobs.models import Job
 
 def home(request):
+    if request.method == 'POST':
+        firstName = request.POST['firstName']
+        lastName = request.POST['lastName']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        message = request.POST['message']
+        Message.objects.create(firstName=firstName, lastName=lastName, email=email, phone=phone, message=message)
 
     Talents = Talent.objects.all()
     Jobs = Job.objects.all()

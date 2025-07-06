@@ -434,15 +434,16 @@
     <section class="contact ptb-100" id="contact">
         <div class="container">
             <h2>تماس با من</h2>
-            <form id="basic-form" action="" method="get">
+            <form id="basic-form" action="" method="post">
+                {% csrf_token %}
                 <div class="contact-inner d-flex">
                     <div class="input-block form-item">
                         <label for="">نام</label>
-                        <input type="text" name="name" required>
+                        <input type="text" name="firstName" required>
                     </div>
                     <div class="input-block form-item">
                         <label for="">نام خانوادگی</label>
-                        <input type="text" name="family" required>
+                        <input type="text" name="lastName" required>
                     </div>
                     <div class="input-block form-item">
                         <label for="">ایمیل</label>
